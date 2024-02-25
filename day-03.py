@@ -48,7 +48,6 @@ resJoin = ''.join([a,b,c,d])
 str = resJoin.replace('Python', 'Java')
 print(str)
 
-
 # String properties
 
 # Multiplication

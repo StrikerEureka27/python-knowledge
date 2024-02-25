@@ -2,6 +2,12 @@
 
 Python is a high-level, general-purpose programming language known for its readability, simplicity, and versatility. It was created by Guido van Rossum and first released in 1991.
 
+To start learning, there is no other way besides print a  `Hello world`, to achive this we can type:
+
+```
+print('Hello world')
+```
+
 ## Data types
 
 Table listing some of the commonly used data types in Python:
