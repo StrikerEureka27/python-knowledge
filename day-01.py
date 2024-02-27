@@ -9,5 +9,3 @@ print('This is a \\ backslash')
 #print(input('Type your first name:\t'))
 #print('Your name is: ' + input('Type your last name:\t'))
 
-
-print( 'My favorite beer is "' + input('What it\'s your favorite beer? ') + '"\n and often I drink it "' + input('How often do you drink it? ')+'"')
