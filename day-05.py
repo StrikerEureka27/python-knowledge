@@ -267,12 +267,7 @@ rnd_words = ['happy','blue', 'dog', 'jump', 'apple', 'fast', 'bright', 'small', 
 
 def setup_player():
     player_name = input('What is your name? ')
-    player = {
-        'name': player_name,
-        'turn': 0
-    }
-    print('Welcome to Hangam game ' + player['name'] + ' !' )
-    return player
+    print(f'Welcome to Hangam game {player_name}!' )
 
 def split_word(word):
     splited_word = [letter.upper() for letter in word]
@@ -284,18 +279,20 @@ def choice_rnd(elements):
     return choice(elements)
 
 def initialize_game():
-    player = setup_player()
+    setup_player()
     word = split_word(choice_rnd(rnd_words))
     player_word = generate_player_word(word)
+    turn = 0
 
-    while player['turn'] < 5:
+    while turn < 5:
         player_turn(word, player_word)
         if evaluate_end_game(word, player_word):
             print(f'\n Congratulation you guess the word {plain_word(word)}')
             break
-        player['turn']+=1
+        turn+=1
     else:
         print('\n Sorry you have 0 turns left!')
+        print(f'\n The word was {plain_word(word)}')
 
 def player_turn(word, player_word):
         print(f'\n> {plain_word(player_word)} <\n')
@@ -329,8 +326,6 @@ def ask_for_letter():
         return letter.upper()
     else:
         print('\n Sorry you enter a invalid letter')
-
-
 
 initialize_game()
 
