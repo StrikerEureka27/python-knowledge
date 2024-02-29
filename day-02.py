@@ -46,7 +46,6 @@ y = 15
 print(f'Coord [{x},{y}]')
 
 # Math operators
-
 x = 6
 y = 2
 
@@ -57,7 +56,6 @@ print(f'{x} * {y} es igual a {x*y}')
 print(f'{x} / {y} es igual a {x/y}')
 
 # Division at floor
-
 print(f'{x} // {y} es igual a {x//y}')
 print(f'{x} % {y} es igual a {x%y}')
 

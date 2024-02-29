@@ -10,7 +10,6 @@ a = 10
 b = 2
 c = 15
 
-
 my_value = 10>=2 and 15>=10 
 my_value = 10>=2 or 15>=10 
 
@@ -214,7 +213,7 @@ shuffle(colors)
 print(colors)
 
 
-# List by compretion
+# List by comprehension
 
 word = 'Hello'
 chain  = [letter for letter in word if letter != 'H']

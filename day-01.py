@@ -6,6 +6,3 @@ print('Hello\tworld')
 print('Hello' + " world")
 print('My name is \'Pablo\'\n I\'m software engineer')
 print('This is a \\ backslash')
-#print(input('Type your first name:\t'))
-#print('Your name is: ' + input('Type your last name:\t'))
-

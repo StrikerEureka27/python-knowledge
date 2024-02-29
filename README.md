@@ -34,6 +34,26 @@ If you want to see memory address yo can perfom:
 print(hex(id(age)))
 ```
 
+To print the type of a variable
+```
+type(variable_name)
+```
+
+Sometimes there ares several values that you need to print on screen there is differents ways to achive this
+
+## String formats
+
+Function format
+
+```
+print('My car color is {} and has a vehicle registration {}'.format(color, vehicleRegistration))
+```
+Literal chains
+
+```
+print(f'My car color is {color} and has a vehicle registration {vehicleRegistration}')
+```
+
 ## Escape sequence
 
 | Escape Sequence | Meaning                                      |
@@ -50,6 +70,20 @@ print(hex(id(age)))
 | `\uXXXX`         | Unicode character with 16-bit hex value XXXX  |
 | `\UXXXXXXXX`     | Unicode character with 32-bit hex value XXXXXXXX|
 | `\N{name}`       | Unicode character named 'name'                |
+
+## Operators
+
+These are the basic operators to work with python
+
+| Category               | Operators                                     |
+|------------------------|-----------------------------------------------|
+| Arithmetic Operators   | +, -, *, /, // (floor division), % (modulo)  |
+| Comparison Operators   | ==, !=, <, >, <=, >=                          |
+| Assignment Operators   | =, +=, -=, *=, /=, //=, %=                   |
+| Logical Operators      | and, or, not                                  |
+| Bitwise Operators      | &, |, ^, ~, <<, >>                            |
+| Membership Operators   | in, not in                                   |
+| Identity Operators     | is, is not                                   |
 
 ## String methods 
 
@@ -70,4 +104,94 @@ print(hex(id(age)))
 | `str.isalpha()`, `str.isdigit()`, `str.isalnum()` | Checks if all characters are alphabetic, numeric, or alphanumeric. |
 | `str.count(substring)`       | Returns the number of occurrences of a substring in the string. |
 
+## Miscellaneous
 
+Range: is a built-in function in Python that generates a sequence of numbers within a specified range. It is commonly used in for loops.
+
+```
+for i in range(5):
+    print(i)
+```
+Enumerator: Is a built-in function in Python that adds a counter to an iterable, returning tuples containing the index and the corresponding element.
+
+```
+fruits = ['apple', 'banana', 'cherry']
+for index, value in enumerate(fruits):
+    print(f"Index: {index}, Value: {value}")
+```
+
+Zip: Is a built-in function in Python that aggregates elements from two or more iterables (e.g., lists) and creates an iterator of tuples.
+
+```
+names = ['Alice', 'Bob', 'Charlie']
+ages = [25, 30, 22]
+zipped_data = zip(names, ages)
+for name, age in zipped_data:
+    print(f"Name: {name}, Age: {age}")
+```
+
+Max: Is a built-in function in Python that returns the largest item in an iterable or the largest of two or more arguments.
+
+```
+numbers = [3, 7, 2, 9, 5]
+max_value = max(numbers)
+print(f"The maximum value is: {max_value}")
+```
+
+Min: is a built-in function in Python that returns the smallest item in an iterable or the smallest of two or more arguments.
+
+```
+numbers = [3, 7, 2, 9, 5]
+min_value = min(numbers)
+print(f"The minimum value is: {min_value}")
+```
+
+List comprehension: is a concise way to create lists in Python. It provides a more readable and compact syntax for creating lists.
+
+```
+squares = [x**2 for x in range(5)]
+print(squares)
+```
+
+## Funtions
+
+A function is a block of code which only runs when it is called.
+
+```
+def say_hi(name):
+    '''
+    This function return a string
+    '''
+    print(f'Hi {name}!')
+```
+
+Args and kwargs
+
+```
+    def addition_with_args(*args):
+        total = 0
+        for arg in args:
+            total+=arg
+        return total
+
+addition_with_args(5,2,4,6,6,6)
+
+def addition_with_kargs(**kwargs):
+    total = 0
+    for key, value in kwargs.items():
+        print(f'{key} : {value}')
+        total+=value
+    return total
+
+kwargs = {'x': 10, 'y':2, 'z': 1 }
+
+```
+
+## OOP (Object oriented programing)
+
+Is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.
+
+- Encapsulation
+- Inheritance
+- Abstraction
+- Polymorphism
