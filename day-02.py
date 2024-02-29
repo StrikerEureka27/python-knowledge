@@ -70,11 +70,4 @@ print(round(10.455523232));
 print(round(10.855523232));
 
 
-sellerName = input('Type your name: ')
-salesAmount = input('Type your total sales: ')
-
-salesAmount = float(salesAmount)
-totalAmount = round((salesAmount * 13) / 100, 2)
-
-print(f'\nHey! {sellerName}\n, your total comissions are ${totalAmount}')
 
